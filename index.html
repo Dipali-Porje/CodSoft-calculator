@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator </title>
+    <link rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <div class="text-box">
+            <input type="text" id="input">
+         </div>
+         <div class="buttons">
+            <button value="7" class="btn orange" onclick="clearText()" id="clear">C</button>
+            <button value="8" class="btn orange" onclick="back()" id="backspace"><i class="fa-solid fa-delete-left"></i> </button>
+            <button value="9" class="btn orange" onclick="solve('%')">  %</button>
+            <button value="/" onclick="solve('/')" class="btn orange"> /</button>
+           
+            <button value="7" class="btn" onclick="solve('7')"> 7</button>
+            <button value="8" class="btn" onclick="solve('8')"> 8</button>
+            <button value="9" class="btn" onclick="solve('9')">  9</button>
+            <button value="/" onclick=" solve('*')" class="btn orange"> X</button>
+
+            <button value="4" class="btn" onclick="solve('4')"> 4</button>
+            <button value="5" class="btn" onclick="solve('5')"> 5</button>
+            <button value="6" class="btn" onclick="solve('6')"> 6</button>
+            <button value="*" class="btn orange" onclick="solve('-')"> -</button>
+
+            <button value="1" class="btn" onclick="solve('1')">1</button>
+            <button value="2" class="btn" onclick="solve('2')">2</button>
+            <button value="3" class="btn" onclick="solve('3')">3</button>
+            <button value="-" class="btn orange" onclick="solve('+')">+</button>
+
+            <button value="0" class="btn" onclick="solve('0')">0 </button>
+            <button value="." class="btn" onclick="solve('00')">00</button>
+            <button value="+" class="btn" onclick="solve('.')">.</button>
+            <button value="=" class="btn orange" onclick="result()">= </button>
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
